@@ -19,6 +19,7 @@ function firstAndPike(minCust,maxCust,avgCookies,salesArr,name){
       total += cookiesPerHour;
     }
     this.salesArr.push(total);
+    console.log(salesArr);
   },
   this.createListItems = function(){
     var newHeading = document.createElement('h2');
