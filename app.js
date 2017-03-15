@@ -33,5 +33,6 @@ var firstAndPike = {
     body.appendChild(firstUl);
   }
 };
+
 firstAndPike.cookiesSold();
 firstAndPike.createListItems();
