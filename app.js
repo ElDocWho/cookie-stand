@@ -21,16 +21,19 @@ var firstAndPike = {
     this.salesArr.push(total);
   },
   createListItems: function(){
+    var body = getElementsByTagName('body')[0];
     var newHeading = document.createElement('h2');
+    body.appendchild(firstUL);
     body.appendchild(newHEading);
     newHeading.innerText = this.name;
     var firstUL = document.createElement('ul');
-    for (var i = 0; i < storeHours.leght; i++) {
+    newHeading.innerText = this.firtstUL;
+    for (var i = 0; i < storeHours.lenght; i++) {
       var newEl = document.createElement('li');
-      newEl.innerText = storeHours[i] + ': ' + this.salesArr[i] + 'cookies';
+      var txt = document.createTextNode(storeHours[i] + ': ' + this.salesArr[i] + 'cookies');
       firstUL.appendchild(newEL);
+      txt.appendchild(newEl);
     }
-    body.appendChild(firstUl);
   }
 };
 
