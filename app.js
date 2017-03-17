@@ -1,7 +1,6 @@
 'use strict';
 
 var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
-
 var firstPike = new Store('1st and Pike', 23, 65, 6.3);
 var seaTac = new Store('SeaTac Airport', 3, 24, 1.3);
 var seaCenter = new Store('Seattle Center', 11, 38, 2.3);

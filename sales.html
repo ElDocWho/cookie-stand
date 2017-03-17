@@ -6,40 +6,41 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   </head>
-  <body>
+  <body id="body">
     <header>
-    <img src="https://github.com/codefellows/seattle-201d20/raw/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png" class="center"/>
+      <img src="https://github.com/codefellows/seattle-201d20/raw/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png" class="center"/>
     </header>
     <section>
       <h1>Salmon Cookie Projections</h1>
     </section>
+        <form method="get" id="the-form">
+            <fieldset>
+            <li>
+             <label for="storeName">Store Name:</label>
+             <input type="text" maxlength="15"  name="storeName" id="storename" required/>
+           </li>
 
-  <script type="text/javascript" src="app.js"></script>
-  <form method="get" id="the-form">
-              <fieldset>
-              <li>
-               <label for="storeName">Store Name:</label>
-               <input type="text" maxlength="15"  name="storeName" id="storename" required/>
-             </li>
+           <li>
+             <label for="minCust">Min.Customers Per Day:</label>
+             <input type="number" name="minCust" id="minCust" min="0" required />
+           </li>
 
-             <li>
-               <label for="minCust">Min.Customers Per Day:</label>
-               <input type="number" name="minCust" id="minCust" min="0" required />
-             </li>
+           <li>
+             <label for="maxCust">Max. Customers Per Day:</label>
+             <input type="number" name="maxCust" id="maxCust" min="1" required />
+           </li>
 
-             <li>
-               <label for="maxCust">Max. Customers Per Day:</label>
-               <input type="number" name="maxCust" id="maxCust" min="1" required />
-             </li>
+           <li>
+             <label for="avgCookieSale"></label>Avg. Cookies per Customer:
+             <input type="number" name="aveCookies" id="submit" step="0.01" min="1" required />
+           </li>
 
-             <li>
-               <label for="avgCookieSale"></label>Avg. Cookies per Customer:
-               <input type="number" name="aveCookies" id="submit" step="0.01" min="1" required />
-             </li>
+           <li><button name="button" type="submit">Submit</button>
+           </li>
+         </fieldset>
+      </form>
 
-             <li><button name="button" type="submit">Submit</button>
-             </li>
-           </fieldset>
-        </form>s
   </body>
+  <script src="app.js">
+  </script>
 </html>
