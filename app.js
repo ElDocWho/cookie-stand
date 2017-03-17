@@ -1,13 +1,5 @@
 'use strict';
 
-function cookieinfo() {
-  var x = document.forms['cookiestore']['fname'].value;
-  if (x == '') {
-    alert('Name must be filled out');
-    return false;
-  }
-}
-
 var storeHrs = ['', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 var body = document.getElementsByTagName('body')[0];
 var allStores = []; // will hold every store that gets built; currently holds nothing
