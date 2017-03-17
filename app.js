@@ -1,31 +1,15 @@
 'use strict';
-
 var i = 0;
 var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', 'total'];
 var body = document.getElementsByTagName('body')[0];
-var stores = [];
-for (var a = 0; i < 5; i++) {
-  if (a = 0) {
-    var store = stores[a];
-  }
-  if (a = 1) {
-    var store = stores[a];
-  }
-  if (a = 2) {
-    var store = stores[a];
-  }
-  if (a = 3) {
-    var store = stores[a];
-  }
-  if (a = 4) {
-    var store = stores[a];
-  }
-  var store = {
+var stores = ['1st and Pike','SeaTac Airport','Seattle Center','Capitol Hill','Alki'];
+for (var i = 0; i < 5; i++) {
+  var x = {
     minCust: 23,
     maxCust: 65,
     avgCookies: 6.3,
     salesArr: [],
-    name: (store),
+    name: stores[i],
     randCust: function () {
       return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
     },
@@ -52,6 +36,5 @@ for (var a = 0; i < 5; i++) {
       body.appendChild(firstUl);
     }
   };
-
-  store.createListItems();
+  x.createListItems();
 }
