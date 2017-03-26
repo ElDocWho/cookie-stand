@@ -1,4 +1,4 @@
-'use strict';
+'use strict'; //This is my final draft
 
 var body = document.getElementsByTagName('body')[0];
 var allStores = [];
