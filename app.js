@@ -2,7 +2,6 @@
 
 var body = document.getElementsByTagName('body')[0];
 var allStores = [];
-
 var storeHrs = ['', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 var oneAndPike = new CookieStand('1st and Pike', 23, 65, 6.3);
 var seaTacAirport = new CookieStand('SeaTac Airport', 3, 24, 1.2);
@@ -30,22 +29,20 @@ function CookieStand(name, minHourCust, maxHourCust, avgCookiesPerCust) {
   };
 
   this.generateTableRow = function() {
-    this.dailyCookies(); // this line populates the sales array
+    this.dailyCookies();
     var table = document.getElementsByTagName('table')[0];
     var tRow = document.createElement('tr');
     var tableBody = document.getElementById('table-body');
     tableBody.appendChild(tRow);
     var nameTD = document.createElement('th');
-    nameTD.innerText = this.name; // the first column in the new row
+    nameTD.innerText = this.name;
     tRow.appendChild(nameTD);
     for (var i = 0; i < storeHrs.length - 1; i++) {
-      var newTD = document.createElement('td'); // create a new td element
-      newTD.innerText = this.salesArr[i]; // take the sales for an individual hour, and assign it to the td
-      tRow.appendChild(newTD); // append the td to the store's row
-    }
+      var newTD = document.createElement('td');
+      newTD.innerText = this.salesArr[i];
+      tRow.appendChild(newTD);
   };
-  allStores.push(this); // automatically adds the entire object to the allStores array upon construction.
-}
+  allStores.push(this);
 
 function createTable() {
   var table = document.createElement('table');
