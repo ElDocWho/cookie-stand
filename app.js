@@ -26,6 +26,7 @@ function CookieStand(name, minHourCust, maxHourCust, avgCookiesPerCust) {
       this.salesArr.push(cookiesPerHr);
       this.total = cookiesPerHr;
     }
+
   };
 
   this.generateTableRow = function() {
@@ -41,8 +42,11 @@ function CookieStand(name, minHourCust, maxHourCust, avgCookiesPerCust) {
       var newTD = document.createElement('td');
       newTD.innerText = this.salesArr[i];
       tRow.appendChild(newTD);
+    }
+
   };
   allStores.push(this);
+}
 
 function createTable() {
   var table = document.createElement('table');
@@ -60,6 +64,7 @@ function createTable() {
   table.appendChild(tableBody);
   tableBody.id = 'table-body';
 };
+
 createTable();
 
 for (var i = 0; i < allStores.length; i++) {
