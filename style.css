@@ -2,6 +2,56 @@ body {
    background-color: black;
  }
 
+table, td, th {
+    border: 3px solid black;
+}
+.center {
+    margin: auto;
+    width: 30%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+.center {
+    display: block;
+    margin: 0 auto;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+h1 {
+    text-align: center;
+}
+table {
+    display: block;
+    margin: auto;
+    width: 47%;
+}
+#qq [type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+}
+li {
+    float: left;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+li {
+    color: #808080;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    padding-right: 10px;
+
  header {
    width: auto;
    height: auto;
@@ -40,3 +90,4 @@ body {
    text-align: center;
    font-size: 2em;
  }
+
