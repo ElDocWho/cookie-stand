@@ -1,5 +1,5 @@
 body {
-   background-color: black;
+   background-color: blue;
  }
 
  header {
@@ -40,3 +40,8 @@ body {
    text-align: center;
    font-size: 2em;
  }
+
+fieldset {
+    background-color: red;
+    text-align: center;
+  }

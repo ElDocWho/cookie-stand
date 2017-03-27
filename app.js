@@ -70,3 +70,25 @@ createTable();
 for (var i = 0; i < allStores.length; i++) {
   allStores[i].generateTableRow();
 }
+
+//tabFunction();
+
+var form = document.getElementById('the-form');
+function CreatNewCookieStand(event) {
+  //event.preventDefault();
+  var name = event.target.elements.name;
+  var minCust = event.target.elements.minCust;
+  var maxCust = event.target.elements.maxCust;
+  var avgCookieSale = event.target.elements.aveCookies;
+
+  if (maxCust < minCust) {
+    alert('The max number of customers should not be larger than the min number of customers');
+  } else {
+    var CookieStand = new CreatNewCookieStand(name.value, Math.floor(minCust.value), Math.floor(maxCust.value), avgCookieSale.value);
+    newTableRow(newStore);
+
+    form.reset();
+  }
+}
+
+form.addEventListener('submit', CreatNewCookieStand);
