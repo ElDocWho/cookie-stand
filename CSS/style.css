@@ -1,8 +1,10 @@
 body {
-   background-color: blue;
+  background-image: url("water.jpg");
+  background-color: #cccccc;
  }
 
- header {
+ header {    background-image: url("water.jpg");
+    background-color: #cccccc;
    width: auto;
    height: auto;
    background-color: blue;
@@ -45,6 +47,7 @@ body {
 fieldset {
     background-color: red;
     text-align: center;
+    border-radius: 50%;
   }
 #parrafo {
   text-align: center;
@@ -59,4 +62,6 @@ fieldset {
     margin-left: 100px;
     margin-right: 41.75px;
     background-color: blue;
+    border-radius: 50%;
+    text-align: center;
 }
