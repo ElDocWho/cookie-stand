@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Salmon Cookies Store</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="image123">
+      <div class="imgContainer">
+          <img src="img/family.jpg" height="50" width="100"/>
+          <a href="" >About Us</a>
+      </div>
+      <div class="imgContainer">
+          <img src="img/frosted-cookie.jpg" height="50" width="100"/>
+          <a href="" >Cookie Store</a>
+      </div>
+      <div class="imgContainer">
+          <img class="middle-img" src="img/salmon.png"/ height="50" width="150"/>
+          <a href="" >Salmon Cookie Store</a>
+      </div>
+      <div class="imgContainer">
+           <img src="img/shirt.jpg" height="50" width="100"/>
+          <a href="" >T-Shirt Store</a>
+      </div>
+      <div class="imgContainer">
+           <img src="img/cutter.jpeg" height="50" width="100"/>
+          <a href="" >Bakery</a>
+      </div>
+      <div class="imgContainer">
+           <img src="img/chinook.jpg" height="50" width="100"/>
+          <a href="" >Other fish cookies</a>
+      </div>
+  </div>
+      </header>
+
+      <hr>
+      <H1>Salmon Cookies Store</h1>
+
+      <section id="table">
+        <div id="cookietable"></div>
+      </section>
+
+      <fieldset>
+        <form id="newStoreForm" action="sales.html" method="get">
+          <ul class="tableul">
+            <p id="parrafo" >If you would like to add a store, enter it here.</p>
+            <li class="tablelineitems">
+              <input class="submit" type="submit" name="submitFields" value="Submitt new store info">
+            </li>
+            <li class="tablelineitems">
+              <label class="labels" for="storeLocation">Store Location: </label>
+              <input class="input" type="text" required name="storeLocation" placeholder="Jose Cookie Store" maxlength="25">
+            </li>
+            <li class="tablelineitems">
+              <label class="labels" for="maximumCustomers">Maximum Number Of Customers Per Hour: </label>
+              <input class="input" type="number" required step=".01" name="maximumCustomers" max="200" min="0">
+            </li>
+
+            <li class="tablelineitems">
+              <label class="labels" for="minimunCustomers">Minimum Number Of Customers Per Hour: </label>
+              <input class="input" type="number" required name="minimumCustomers" max="200" min="0">
+            </li>
+
+            <li class="tablelineitems">
+              <label class="labels" for="averageCookies">Average Cookies Purchased Per Customer: </label>
+              <input class="input" type="number" required step="1" name="averageCookies" max="20" min="1">
+            </li>
+
+            </ul>
+          </form>
+        </fieldset>
+
+
+      <footer>
+        <div id="footer">
+            <img src="img/fish.jpg" height="50" width="100"/>
+            <a href="" >More Cookies coming Soon!!!!</a>
+        </div>
+      </footer>
+      <script src="app.js"></script>
+    </main>
+  </body>
+</html>

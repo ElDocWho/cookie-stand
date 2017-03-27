@@ -6,7 +6,7 @@ body {
    width: auto;
    height: auto;
    background-color: blue;
-   
+
    }
 
  img {
@@ -25,7 +25,8 @@ body {
  table {
    width: 70%;
    margin: auto;
-   margin-top: 3px;
+   margin-top: 30px;
+   margin-bottom: 30px;
    border: 1px solid red;
    background-color: green;
  }
@@ -49,4 +50,13 @@ fieldset {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
    font-size: 40px;
+}
+
+.imgContainer{
+    float:left;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    margin-right: 41.75px;
+    background-color: blue;
 }
