@@ -2,11 +2,58 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Salmon Cookies Store</title>
   </head>
   <body>
+    <main>
+      <header>
+        <h1>Salomon Cookie Store</h1>
+        <img id="salmon" src="img/salmon.png" alt="A Salmon">
+      </header>
 
-<script type="text/javascript" src="app.js"></script>
+      <section id="table">
+        <div id="cookietable"></div>
+      </section>
 
+      <fieldset>
+        <form id="newStoreForm" action="sales.html" method="get">
+          <ul class="tableul">
+            <p id="parrafo" >If you would like to add a store, enter it here.</p>
+            <li class="tablelineitems">
+              <input class="submit" type="submit" name="submitFields" value="Submitt new store info">
+            </li>
+            <li class="tablelineitems">
+              <label class="labels" for="storeLocation">Store Location: </label>
+              <input class="input" type="text" required name="storeLocation" placeholder="Jose Cookie Store" maxlength="25">
+            </li>
+            <li class="tablelineitems">
+              <label class="labels" for="maximumCustomers">Maximum Number Of Customers Per Hour: </label>
+              <input class="input" type="number" required step=".01" name="maximumCustomers" max="200" min="0">
+            </li>
+
+            <li class="tablelineitems">
+              <label class="labels" for="minimunCustomers">Minimum Number Of Customers Per Hour: </label>
+              <input class="input" type="number" required name="minimumCustomers" max="200" min="0">
+            </li>
+
+            <li class="tablelineitems">
+              <label class="labels" for="averageCookies">Average Cookies Purchased Per Customer: </label>
+              <input class="input" type="number" required step="1" name="averageCookies" max="20" min="1">
+            </li>
+
+            </ul>
+          </form>
+        </fieldset>
+
+
+      <footer>
+        <div class="locArea">
+
+        </div>
+      </footer>
+      <script src="app.js"></script>
+    </main>
   </body>
 </html>

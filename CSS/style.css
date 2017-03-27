@@ -1,0 +1,52 @@
+body {
+   background-color: blue;
+ }
+
+ header {
+   width: auto;
+   height: auto;
+   background-color: blue;
+   
+   }
+
+ img {
+   display: block;
+   margin: 7px auto 7px auto;
+
+ }
+
+ h1 {
+   text-align: center;
+   font-size: 2em;
+   font-family: Arial, monospace;
+   color: white;
+ }
+
+ table {
+   width: 70%;
+   margin: auto;
+   margin-top: 3px;
+   border: 1px solid red;
+   background-color: green;
+ }
+
+ th {
+   font-size: 1em;
+   color: white;
+ }
+
+ td {
+   border: 1px solid ;
+   text-align: center;
+   font-size: 2em;
+ }
+
+fieldset {
+    background-color: red;
+    text-align: center;
+  }
+#parrafo {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+   font-size: 40px;
+}
